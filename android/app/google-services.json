@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1069403553147",
+    "project_id": "messageapp-96318",
+    "storage_bucket": "messageapp-96318.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1069403553147:android:0aef00ed2fa22d304211de",
+        "android_client_info": {
+          "package_name": "com.raghadnassar.chat_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDkpKz5_8wZ9BpL7-eGMgF_p9mObbl3UJA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

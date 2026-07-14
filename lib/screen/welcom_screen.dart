@@ -1,9 +1,12 @@
 import 'package:chat_app/core/constans/app_assets.dart';
 import 'package:chat_app/core/theme/app_colors.dart';
+import 'package:chat_app/screen/sign_in_screen.dart';
+import 'package:chat_app/screen/sign_up_screen.dart';
 import 'package:chat_app/widget/botton_widget.dart';
 import 'package:flutter/material.dart';
 
 class WelcomScreen extends StatelessWidget {
+  static const String welcomscreen = " welcom_screen";
   const WelcomScreen({super.key});
 
   @override
@@ -29,12 +32,22 @@ class WelcomScreen extends StatelessWidget {
                 fontWeight: FontWeight.bold,
                 color: AppColors.blue),
           ),
-         const  SizedBox(height: 30,),
-          CustomBottomWidget(text: 'Sin In', colortext: AppColors.lightSurface),
+          const SizedBox(
+            height: 30,
+          ),
+          CustomBottomWidget(
+              text: 'Sin In',
+              colortext: AppColors.lightSurface,
+              onTap: () {
+                Navigator.pushNamed(context, SignInScreen.sigInrouting);
+              }),
           CustomBottomWidget(
             text: 'Sin Up',
             colortext: AppColors.lightSurface,
             backgroundColor: AppColors.orange,
+            onTap: () {
+              Navigator.pushNamed(context, SignUpScreen.sigUprouting);
+            },
           ),
           const Spacer(
             flex: 3,
